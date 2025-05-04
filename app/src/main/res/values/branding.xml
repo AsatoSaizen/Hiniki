@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amazon_orange">#FF9900</color>
+    <color name="crunchyroll_orange">#f47521</color>
+    <color name="disney_teal">#006E99</color>
+    <color name="hidive_blue">#00AEEF</color>
+    <color name="hulu_green">#1CE783</color>
+    <color name="hulu_black">#040405</color>
+    <color name="max_blue">#0033FF</color>
+    <color name="max_dark_blue">#000066</color>
+    <color name="netflix_red">#E50914</color>
+    <color name="netflix_dark_red">#B20710</color>
+    <color name="netflix_black">#221f1f</color>
+    <color name="prime_blue">#1399FF</color>
+    <color name="tubi_deep_purple">#45009D</color>
+    <color name="tubi_hello_yellow">#FFFF13</color>
+    <color name="tubi_vibrant_purple">#8C00E5</color>
+    <color name="adn_blue">#007AFF</color>
+
+    <color name="hulu_gradient_start">#040405</color>
+    <color name="hulu_gradient_end">#183949</color>
+
+    <color name="youtube_red">#FF0000</color>
+    <color name="anilist_banner">#242538</color>
+</resources>

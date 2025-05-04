@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/settingsIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginVertical="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/round_settings_24"
+                app:tint="?attr/colorPrimary"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/settingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/radius"
+                    android:textSize="16sp"
+                    app:drawableTint="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/settingsDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.66"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:paddingEnd="28dp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settingsLabelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/settingsLabelLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:alpha="0.66"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="start"
+                android:textSize="12sp"
+                app:drawableTint="?attr/colorOnSurfaceVariant" />
+
+            <TextView
+                android:id="@+id/settingsLabelRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:alpha="0.66"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/settingSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-4dp"
+            android:layout_marginEnd="-4dp"
+            android:layout_marginBottom="8dp"
+            app:labelBehavior="floating"
+            app:labelStyle="@style/fontTooltip"
+            app:thumbColor="?attr/colorSecondary"
+            app:tickColorInactive="?attr/colorSecondary"
+            app:trackColorActive="?attr/colorSecondary"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</FrameLayout>

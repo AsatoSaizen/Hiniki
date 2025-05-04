@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemEpisodeCont"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_outline"
+    android:backgroundTint="?attr/colorSurfaceVariant"
+    android:backgroundTintMode="src_atop"
+    android:longClickable="true"
+    app:cardCornerRadius="16dp">
+
+    <View
+        android:id="@+id/itemEpisodeFillerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/filler"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-4dp"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#000000"
+                app:cardCornerRadius="16dp">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/itemEpisodeImage"
+                    android:layout_width="164dp"
+                    android:layout_height="109dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/CardViewStyleTopBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="24dp"
+                    app:cardBackgroundColor="?attr/colorOnBackground"
+                    app:cardPreventCornerOverlap="false"
+                    app:strokeWidth="0dp">
+
+                    <TextView
+                        android:id="@+id/itemEpisodeNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:minWidth="32dp"
+                        android:paddingHorizontal="8dp"
+                        android:textColor="?android:colorBackground"
+                        android:textSize="20sp"
+                        tools:text="2" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/itemEpisodeViewed"
+                    style="@style/CardViewStyleBottomTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:alpha="0.5"
+                    app:cardBackgroundColor="?android:colorBackground"
+                    app:strokeWidth="0dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/round_remove_red_eye_24"
+                        app:tint="?attr/colorOnBackground"
+                        tools:ignore="ContentDescription" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/itemEpisodeProgressCont"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/itemEpisodeProgress"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="0"
+                        android:background="?attr/colorPrimary" />
+
+                    <View
+                        android:id="@+id/itemEpisodeProgressEmpty"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="#80FFFFFF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/itemEpisodeHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="92dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemEpisodeFiller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/filler"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:visibility="gone"
+                    app:lineHeight="12sp" />
+
+                <TextView
+                    android:id="@+id/itemEpisodeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins_bold"
+                    android:maxLines="5"
+                    android:text="@string/empty"
+                    app:lineHeight="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/itemDownload"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_download_24"
+                    app:tint="?attr/colorOnBackground"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:id="@+id/importDownload"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/round_source_24"
+                    app:tint="?attr/colorOnBackground"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemDownloadStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/poppins_bold"
+            android:maxLines="5"
+            android:padding="16dp"
+            android:text=""
+            android:visibility="gone"
+            app:lineHeight="15sp" />
+
+        <TextView
+            android:id="@+id/itemEpisodeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.58"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="16dp"
+            app:lineHeight="16sp"
+            tools:ignore="TextContrastCheck"
+            tools:text="@tools:sample/lorem/random" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/itemEpisodeViewedCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.33"
+        android:background="?android:colorBackground"
+        android:visibility="gone" />
+
+
+</androidx.cardview.widget.CardView>

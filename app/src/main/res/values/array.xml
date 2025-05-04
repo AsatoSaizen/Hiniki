@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="downloadManagers">
+        <item>Add-On</item>
+        <item>1DM</item>
+        <item>ADM</item>
+        <item>Browser</item>
+    </string-array>
+
+    <string-array name="resizeModes">
+        <item>Original</item>
+        <item>Zoom</item>
+        <item>Stretch</item>
+    </string-array>
+
+    <string-array name="outlineType">
+        <item>None</item>
+        <item>Outline</item>
+        <item>Drop Shadow</item>
+        <item>Raised</item>
+        <item>Depressed</item>
+    </string-array>
+    
+    <string-array name="subtitleColor">
+        <item>Transparent</item>
+        <item>Black</item>
+        <item>Dark Gray</item>
+        <item>Gray</item>
+        <item>Light Gray</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Magenta</item>
+    </string-array>
+    
+    <string-array name="subPrimaryColor">
+        <item>Black</item>
+        <item>Dark Gray</item>
+        <item>Gray</item>
+        <item>Light Gray</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Magenta</item>
+        <item>Transparent</item>
+    </string-array>
+
+    <string-array name="subtitleFont">
+        <item>Poppins Semi Bold</item>
+        <item>Poppins Bold</item>
+        <item>Poppins</item>
+        <item>Poppins Thin</item>
+        <item>Century Gothic</item>
+        <item>Levenim MT Bold</item>
+        <item>Blocky</item>
+    </string-array>
+
+    <string-array name="dnsProvider">
+        <item>None</item>
+        <item>Cloudflare</item>
+        <item>Google</item>
+        <item>AdGuard</item>
+        <item>Quad9</item>
+        <item>AliDNS</item>
+        <item>DNSPod</item>
+        <item>360</item>
+        <item>Quad101</item>
+        <item>Mullvad</item>
+        <item>Controld</item>
+        <item>Njalla</item>
+        <item>Shecan</item>
+        <item>Libre</item>
+    </string-array>
+
+    <string-array name="quickSettings">
+        <item>Current Settings</item>
+        <item>Himitsu Defaults</item>
+        <item>Fast Loading</item>
+        <item>More Content</item>
+    </string-array>
+
+    <string-array name="skipType">
+        <item>Opening</item>
+        <item>Ending</item>
+        <item>Mixed Opening</item>
+        <item>Mixed Ending</item>
+        <item>Recap</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>Korean (한국어)</item>
+        <item>Taiwanese (國語)</item>
+        <item>Japanese (日本語)</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="search_type">
+        <item>Anime 📽️</item>
+        <item>Manga 📖</item>
+        <item>User 👤</item>
+        <item>Staff 🙋</item>
+        <item>Studio 🏩</item>
+        <item>Character 🦄</item>
+    </string-array>
+</resources>

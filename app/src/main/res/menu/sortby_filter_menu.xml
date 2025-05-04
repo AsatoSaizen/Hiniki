@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_by_score"
+        android:title="@string/sort_score" />
+    <item
+        android:id="@+id/sort_by_popular"
+        android:title="@string/popular" />
+    <item
+        android:id="@+id/sort_by_trending"
+        android:title="@string/trending" />
+    <item
+        android:id="@+id/sort_by_recent"
+        android:title="@string/new_releases" />
+    <item
+        android:id="@+id/sort_by_a_z"
+        android:title="@string/a_z" />
+    <item
+        android:id="@+id/sort_by_z_a"
+        android:title="@string/z_a" />
+    <item
+        android:id="@+id/sort_by_user_score"
+        android:title="@string/user_score" />
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/notificationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="16dp"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="start|center_vertical"
+            app:cardBackgroundColor="@color/nav_bg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:id="@+id/notificationBanner"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <FrameLayout
+                android:id="@+id/notificationGradiant"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:alpha="0.66"
+                android:background="@color/anilist_banner"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/notificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:alpha="0.66"
+                android:layout_gravity="end"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="#2323432"/>
+
+            <LinearLayout
+                android:id="@+id/notificationTextContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="4dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/notificationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.66"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp"
+                    tools:text="Wed,06 March 2024, 7:00PM" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</merge>

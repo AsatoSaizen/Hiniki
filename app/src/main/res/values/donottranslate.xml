@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Himitsu</string>
+
+    <string name="repo_gh">RepoDevil/Himitsu-Archive</string>
+    <string name="repo_gl">RepoDevil/Himitsu</string>
+
+    <string name="preference_file_key">dantotsuprefs</string>
+
+    <string name="git_issue_title">[Log] Himitsu #%1$s</string>
+
+    <string name="himitsu_url">https://repodevil.netlify.app/</string>
+    <string name="discord_txt">Discord</string>
+    <string name="discord_bot">file:///android_asset/discord.html</string>
+    <string name="discord_url">https://discord.gg/vnrhgrt</string>
+    <string name="github">https://github.com/%1$s</string>
+    <string name="gitlab">https://gitlab.com/%1$s</string>
+    <string name="coffee">https://www.buymeacoffee.com/abandonedcart</string>
+    <string name="kofi">https://ko-fi.com/abandonedcart</string>
+    <string name="paypal">https://www.paypal.com/donate/?hosted_button_id=Q2LFH2SC8RHRN</string>
+
+    <string name="rpc_intent">https://repodevil.netlify.app/%1$s</string>
+
+    <string name="anilist_link">https://anilist.co/user/%1$s/</string>
+    <string name="myanilist_link">https://myanimelist.net/profile/%1$s/</string>
+    <string name="discord_link">https://discord.com/users/%1$s/</string>
+
+    <string name="update_banner" tools:ignore="TypographyDashes">https://s4.anilist.co/file/anilistcdn/user/banner/b6654057-1qoWYpRyccea.jpg</string>
+    <string name="update_icon">https://avatars.githubusercontent.com/u/157854237?v=4</string>
+
+    <string name="adblock">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</string>
+
+    <string name="pending_progress">◌ [%1$s] %2$d</string>
+    <string name="setting_progress">✔ [%1$s] %2$d</string>
+    <string name="total_divider">\u0020| %1$s</string>
+    <string name="sad">X(</string>
+    <string name="oh">:o</string>
+    <string name="colon">" : "</string>
+
+    <string name="ppt">🙋•🏩•🦄</string>
+
+    <string name="himitsu">㊙️</string>
+
+    <string name="rpc_anilist">%1$s on AL</string>
+    <string name="rpc_anime">View Anime Info</string>
+    <string name="rpc_manga">View Manga Info</string>
+    <string name="rpc_stream">Stream on %1$s</string>
+    <string name="rpc_read">Read on Himitsu</string>
+    <string name="rpc_watch">Watch on Himitsu</string>
+
+    <string name="anilist">AniList</string>
+    <string name="myanimelist">MyAnimeList</string>
+    <string name="kitsu">Kitsu</string>
+    <string name="anify">Anify</string>
+    <string name="anibrain">Sprout</string>
+
+    <string name="torrserver">TorrServer</string>
+
+    <string name="himitsu_ocr">Himitsu OCR</string>
+
+    <string-array name="ocr_api_array">
+        <item>kor</item>
+        <item>cht</item>
+        <item>jpn</item>
+        <item>eng</item>
+    </string-array>
+
+    <string name="prime_video">Prime Video</string>
+    <string name="icon_prime" tools:ignore="Typos">https://play-lh.googleusercontent.com/Y7drWZZo_F2GBE1RhjR1irOkE3yrtPorHS1U9YkLKAu1DnTjQ8gNbcRmrBtkd3tnHQ</string>
+    <string name="crunchyroll">Crunchyroll</string>
+    <string name="icon_crunchyroll">https://play-lh.googleusercontent.com/CjzbMcLbmTswzCGauGQExkFsSHvwjKEeWLbVVJx0B-J9G6OQ-UCl2eOuGBfaIozFqow</string>
+    <string name="disney_plus">Disney Plus</string>
+    <string name="icon_disney" tools:ignore="Typos">https://play-lh.googleusercontent.com/gXHdyj_9Dbyz3uJy1EnmLHMUpU33VeD0n6kObv6tzvBveWKDFZQt7yGrnM-L4FW-5P4</string>
+    <string name="hidive">HIDIVE</string>
+    <string name="icon_hidive">https://play-lh.googleusercontent.com/ozC2C3SXw8uv9y_fXkHO5792BIdcsyuxU2jc6mbZCBER8YjlnWaDMwFYKHUr5GMCGo8</string>
+    <string name="hulu">Hulu</string>
+    <string name="icon_hulu">https://play-lh.googleusercontent.com/4whGAVjZGrrlNxzheKAfBXrxggtyAb4euWLeQI8fDfVfdnFEZjE0DZTJ8DKoh64pqcIa</string>
+    <string name="max">Max</string>
+    <string name="icon_max">https://play-lh.googleusercontent.com/VODqBhdZXQIkQlcv_A2nAq1gPNO7fwfDlUO3UZcgcMy6jAVx05CSU-vFuVFsr9gFUuo=w480-h960</string>
+    <string name="netflix">Netflix</string>
+    <string name="icon_netflix">https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI</string>
+    <string name="tubi">Tubi</string>
+    <string name="icon_tubi">https://play-lh.googleusercontent.com/5bxwMbIpnkfAc9Buc38uJeu_5ibdD0OspwTUALCTW2qnNGewNqyZFaWJtIxu6Yit5q8</string>
+    <string name="adn">ADN</string>
+    <string name="icon_adn">https://yt3.googleusercontent.com/69uTqjZd0Y00HXYxnFihs29pyPcsvKky4mJhhsRmstQGt_5MbhBphzb-zlnExmAYX_EjZjiXcg=s160-c-k-c0x00ffffff-no-rj</string>
+    <string name="youtube">Youtube</string>
+    <string name="icon_youtube" tools:ignore="Typos">https://play-lh.googleusercontent.com/gk-WYYED1OJNr0G28ucBPUTPric5QCLwW2q_rNcYg-XTQCbPkhcp3CqVJ-1dHiBql10</string>
+
+    <string name="memory_byte">Byte</string>
+    <string name="memory_kilobyte">KB</string>
+    <string name="memory_megabyte">MB</string>
+    <string name="memory_gigabyte">GB</string>
+    <string name="memory_terabyte">TB</string>
+    <string name="memory_petabyte">PB</string>
+    <string name="memory_exabyte">EB</string>
+
+    <string name="mimetype_apk">application/vnd.android.package-archive</string>
+    <string name="mimetype_binary">application/octet-stream</string>
+    <string name="mimetype_cea">application/cea-608</string>
+    <string name="mimetype_zip">application/zip</string>
+    <string name="mimetype_cbz">application/vnd.comicbook+zip</string>
+
+    <string-array name="mimetype_ebook">
+        <item>application/epub+zip</item>
+        <item>application/x-mobipocket-ebook</item>
+        <item>application/vnd.amazon.ebook</item>
+        <item>application/fb2+zip</item>
+        <item>application/vnd.comicbook+zip</item>
+    </string-array>
+
+    <string name="user_subtitle">\[💬\] %1$s</string>
+
+    <string name="cursed_yt">https://youtube.com/clip/UgkxDwoxzE21Y3G1domobN3vs05PQu7NUlyx?si=qLSx_1ts7TZwmrHw</string>
+
+    <string name="lorem_ipsum">
+
+Lorem ipsum dolor sit amet. Est consectetur sint qui internos optio nam Quis excepturi qui voluptatem animi. Qui labore quasi vel suscipit deleniti et doloremque omnis in velit suscipit et quasi eaque. Et doloribus recusandae id laudantium Quis qui natus velit in voluptatem voluptatem!
+
+Et magni quasi vel nemo omnis et voluptate quisquam vel corporis fuga ut consequatur voluptas At quis veniam. At assumenda illum id minus veritatis id consequatur ipsum est quod corrupti quo adipisci sint. Quo explicabo doloribus et excepturi internos est reiciendis laboriosam ut explicabo veniam ut culpa mollitia in ducimus sint aut autem voluptatem! In consectetur laudantium non omnis saepe nam sint fuga.
+
+Non quae tempore quo provident laudantium qui illo dolor vel quia dolor et exercitationem adipisci quo nemo aliquam ea numquam beatae. Eum Quis dolore aut quia accusantium sed vero autem vel quaerat eaque et beatae dicta non delectus galisum non ullam nulla.
+</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "729049449905",
+    "project_id": "himitsu-389b2",
+    "storage_bucket": "himitsu-389b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729049449905:android:c428e3668af3b17f83a990",
+        "android_client_info": {
+          "package_name": "ani.dantotsu.matagi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD_lt3Y6glyar0X5iGpMcwDwcEPvG8r6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729049449905:android:a45e4888cc9ad14a83a990",
+        "android_client_info": {
+          "package_name": "ani.himitsu.matagi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD_lt3Y6glyar0X5iGpMcwDwcEPvG8r6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/playbackSpeedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/playback_speed"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/playbackSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sub_translate"
+        android:textAlignment="viewStart"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:cornerRadius="0dp"
+        app:drawableTint="?attr/colorPrimary"
+        app:showText="false"
+        app:thumbTint="@color/button_switch_track"
+        tools:visibility="visible"/>
+
+    <NumberPicker
+        android:id="@+id/playbackSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/playbackConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_speed" />
+</LinearLayout>

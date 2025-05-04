@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/reader_settings"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/themeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/theme" />
+
+            <ani.himitsu.view.SpinnerNoSwipe
+                android:id="@+id/themeSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="0"
+                android:entries="@array/themes"
+                android:popupBackground="@drawable/round_corner"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <ani.himitsu.view.FadingEdgeRecyclerView
+            android:id="@+id/novelReaderRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:requiresFadingEdge="vertical"
+            tools:listitem="@layout/item_settings" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

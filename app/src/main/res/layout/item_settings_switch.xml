@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginVertical="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/round_settings_24"
+            app:tint="?attr/colorPrimary"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="32sp"
+            android:orientation="vertical">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/name"
+                android:textAlignment="viewStart"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="16sp"
+                app:cornerRadius="0dp"
+                app:drawableTint="?attr/colorPrimary"
+                app:showText="false"
+                app:thumbTint="@color/button_switch_track" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/settingsDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.66"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:paddingEnd="28dp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/settingsExtraIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="12dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/round_settings_24"
+                    app:tint="?attr/colorPrimary"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

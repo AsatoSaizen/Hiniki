@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/genreContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="vertical"
+    android:orientation="vertical"
+    android:requiresFadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/listBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/back_button"
+            app:srcCompat="@drawable/ic_round_arrow_back_ios_new_24"
+            app:tint="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/listTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/genres"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mediaInfoGenresRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:layout_gravity="center_horizontal"
+        android:requiresFadingEdge="vertical"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_genre"
+        tools:orientation="vertical"
+        tools:spanCount="2" />
+
+    <ProgressBar
+        android:id="@+id/mediaInfoGenresProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="32dp" />
+
+    <TextView
+        android:id="@+id/emptyRecyclerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/nothing_found"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>
