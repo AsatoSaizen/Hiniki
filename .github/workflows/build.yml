@@ -1,20 +1,13 @@
-name: Build APK
-        on: push
-        
-        jobs:
-          build:
-            runs-on: ubuntu-latest
-            steps:
-            - uses: actions/checkout@v4
-            
-            - name: Make gradlew executable
-              run: chmod +x gradlew
-            
-            - name: Build APK
-              run: ./gradlew assembleDebug
-            
-            - name: Upload APK
-              uses: actions/upload-artifact@v4
-              with:
-                name: app-debug
-                path: app/build/outputs/apk/debug/*.apk
+- name: Build APKs
+                  uses: gradle/gradle-build-action@v3
+                  with:
+                    arguments: |
+                      assembleDebug
+                      assembleRelease
+                
+                - name: Upload APKs as Artifact
+                  uses: actions/upload-artifact@v4
+                  with:
+                    name: all-apks
+                    path: |
+                      app/build/outputs/apk/release/*-unsigned.apk
