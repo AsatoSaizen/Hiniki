@@ -1,27 +1,14 @@
 name: Build APK
-                                                    on:
-                                                      workflow_dispatch:
-                                                        inputs:
-                                                          experimental:
-                                                            description: 'Experimental build'
-                                                            required: false
-                                                            default: false
-                                                            type: boolean
-                                                    
-                                                    jobs:
-                                                      build:
-                                                        runs-on: ubuntu-latest
-                                                        steps:
-                                                          - uses: actions/checkout@v4
-                                                          
-                                                          - name: Make gradlew executable
-                                                            run: chmod +x gradlew
-                                                          
-                                                          - name: Build APK
-                                                            run: ./gradlew assembleDebug
-                                                          
-                                                          - name: Upload APK
-                                                            uses: actions/upload-artifact@v4
-                                                            with:
-                                                              name: app-debug
-                                                              path: app/build/outputs/apk/debug/*.apk
+                                                              on: push
+                                                              
+                                                              jobs:
+                                                                build:
+                                                                  runs-on: ubuntu-latest
+                                                                  steps:
+                                                                  - uses: actions/checkout@v4
+                                                                  - run: chmod +x gradlew
+                                                                  - run: ./gradlew assembleDebug
+                                                                  - uses: actions/upload-artifact@v4
+                                                                    with:
+                                                                      name: app
+                                                                      path: app/build/outputs/apk/debug/*.apk
